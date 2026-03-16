@@ -2,17 +2,17 @@
 # Do not edit release values manually; CI rewrites the tap cask on every tagged release.
 
 cask "nodex" do
-  version "0.1.4"
+  version "0.1.5"
 
   on_arm do
-    sha256 "0d16029f214c75dd651762d4758bd756d1b7e9543c1b245ed228681bb32cf042"
+    sha256 "be71c167b742fb33423bdc68ca46f698c0807cdb2b4796bcb3d2a388b46edd01"
 
     url "https://github.com/Asphocarp/nodex/releases/download/v#{version}/Nodex-#{version}-arm64.dmg",
         verified: "github.com/Asphocarp/nodex/"
   end
 
   on_intel do
-    sha256 "31630aada7bae2aeb808d7df7513a3dd1ac84f82f0aa5738a806c019b6521248"
+    sha256 "ebe59624e40e6ddbcb78ca3e75767e4d230163a350a7f3d9816d1dfad8a65512"
 
     url "https://github.com/Asphocarp/nodex/releases/download/v#{version}/Nodex-#{version}-x64.dmg",
         verified: "github.com/Asphocarp/nodex/"
