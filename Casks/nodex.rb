@@ -2,25 +2,25 @@
 # Do not edit release values manually; CI rewrites the tap cask on every tagged release.
 
 cask "nodex" do
-  version "0.1.6"
+  version "0.1.7"
 
   on_arm do
-    sha256 "ca7153a0698be7e534afe4ea4c33aa7303cafa61918e08abd18f5a3ee72b01d1"
+    sha256 "b3831abc9001caf57822bea4c778237c7d4fed439e291aa2073dc2a5aa28f292"
 
-    url "https://github.com/Asphocarp/nodex/releases/download/v#{version}/Nodex-#{version}-arm64.dmg",
-        verified: "github.com/Asphocarp/nodex/"
+    url "https://github.com/junyudev/nodex/releases/download/v#{version}/Nodex-#{version}-arm64.dmg",
+        verified: "github.com/junyudev/nodex/"
   end
 
   on_intel do
-    sha256 "77c209e91cc7ecdee7fae06e9f2579bbb46ae898f5a38e2074cd7540cdbdcc5f"
+    sha256 "fabf02beb8aa70436dbcbd9f3aaa577c43a148f9fe0667c5c4e18f2aef3ab002"
 
-    url "https://github.com/Asphocarp/nodex/releases/download/v#{version}/Nodex-#{version}-x64.dmg",
-        verified: "github.com/Asphocarp/nodex/"
+    url "https://github.com/junyudev/nodex/releases/download/v#{version}/Nodex-#{version}-x64.dmg",
+        verified: "github.com/junyudev/nodex/"
   end
 
   name "Nodex"
   desc "Block-based Agent Orchestrator"
-  homepage "https://github.com/Asphocarp/nodex"
+  homepage "https://github.com/junyudev/nodex"
 
   livecheck do
     url :homepage
