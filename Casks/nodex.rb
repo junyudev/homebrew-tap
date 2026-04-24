@@ -2,17 +2,17 @@
 # Do not edit release values manually; CI rewrites the tap cask on every tagged release.
 
 cask "nodex" do
-  version "0.1.8"
+  version "0.1.9"
 
   on_arm do
-    sha256 "f46aa8912f55eb8556dab4e4058af66f7843d499c01e267a88a9d6fbd459a479"
+    sha256 "b2dc7f524828520ecd798d9b25e92c6bbbe2c682cb0fb4a0c95b863594d4c195"
 
     url "https://github.com/junyudev/nodex/releases/download/v#{version}/Nodex-#{version}-arm64.dmg",
         verified: "github.com/junyudev/nodex/"
   end
 
   on_intel do
-    sha256 "8e3530d3635ffb1cc0fb3629ee1a3050eb47e3b988d16fb0d60929ba7eeb473f"
+    sha256 "273a3b9f7366f73d8e9975675ce5f52bfcddd742500b1055ff9cedf7e69be774"
 
     url "https://github.com/junyudev/nodex/releases/download/v#{version}/Nodex-#{version}-x64.dmg",
         verified: "github.com/junyudev/nodex/"
