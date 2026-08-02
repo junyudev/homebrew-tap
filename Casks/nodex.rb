@@ -2,16 +2,16 @@
 # Do not edit release values manually.
 
 cask "nodex" do
-  version "0.2.0"
+  version "0.2.1"
 
   on_arm do
-    sha256 "5c0c81073e6be19b95b46401e2de3597247ed7f67526f21cc39de4d77798651b"
+    sha256 "c7e1ed91575511a9f6f171c9291fe589c7465af297e83f933af6402ef13c5e2a"
 
     url "https://github.com/junyudev/nodex/releases/download/v#{version}/Nodex-latest-arm64.dmg",
         verified: "github.com/junyudev/nodex/"
   end
   on_intel do
-    sha256 "30cc27d3a1020e53dd9fa6fa7a69c9987bd33346812bc157eb0c87bba48eea10"
+    sha256 "2cfb9d8d2cda56151f26b155c5b58edabb289e9d3a7afd10bbf6994d85fb746c"
 
     url "https://github.com/junyudev/nodex/releases/download/v#{version}/Nodex-latest-x64.dmg",
         verified: "github.com/junyudev/nodex/"
@@ -19,10 +19,10 @@ cask "nodex" do
 
   name "Nodex"
   desc "Block-based Agent Orchestrator"
-  homepage "https://github.com/junyudev/nodex"
+  homepage "https://nodex.jyu.app/"
 
   livecheck do
-    url :homepage
+    url "https://github.com/junyudev/nodex"
     strategy :github_latest
   end
 
