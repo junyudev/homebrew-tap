@@ -2,16 +2,16 @@
 # Do not edit release values manually.
 
 cask "nodex" do
-  version "0.2.1"
+  version "0.2.2"
 
   on_arm do
-    sha256 "c7e1ed91575511a9f6f171c9291fe589c7465af297e83f933af6402ef13c5e2a"
+    sha256 "e05ecc8157a78dc3c3de72d27baab074405a9ea6dbcea7f026632e6421389bdc"
 
     url "https://github.com/junyudev/nodex/releases/download/v#{version}/Nodex-latest-arm64.dmg",
         verified: "github.com/junyudev/nodex/"
   end
   on_intel do
-    sha256 "2cfb9d8d2cda56151f26b155c5b58edabb289e9d3a7afd10bbf6994d85fb746c"
+    sha256 "38a691fd35c33e4de75ad929ca4373c2f315d7ce18fd37c92e72c8f2814c01eb"
 
     url "https://github.com/junyudev/nodex/releases/download/v#{version}/Nodex-latest-x64.dmg",
         verified: "github.com/junyudev/nodex/"
