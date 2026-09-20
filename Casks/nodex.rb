@@ -2,19 +2,17 @@
 # Do not edit release values manually.
 
 cask "nodex" do
-  version "0.2.2"
+  version "0.3.0"
 
   on_arm do
-    sha256 "e05ecc8157a78dc3c3de72d27baab074405a9ea6dbcea7f026632e6421389bdc"
+    sha256 "764e50c70d713d271b171c5f403b35ad3d0b9940506f427c1eb2705586d00056"
 
-    url "https://github.com/junyudev/nodex/releases/download/v#{version}/Nodex-latest-arm64.dmg",
-        verified: "github.com/junyudev/nodex/"
+    url "https://github.com/junyudev/nodex/releases/download/v#{version}/Nodex-latest-arm64.dmg"
   end
   on_intel do
-    sha256 "38a691fd35c33e4de75ad929ca4373c2f315d7ce18fd37c92e72c8f2814c01eb"
+    sha256 "42c6fa2e556ba005b2d2f8f736ac64ccbe21ad37680f79c50554d34f72ded02f"
 
-    url "https://github.com/junyudev/nodex/releases/download/v#{version}/Nodex-latest-x64.dmg",
-        verified: "github.com/junyudev/nodex/"
+    url "https://github.com/junyudev/nodex/releases/download/v#{version}/Nodex-latest-x64.dmg"
   end
 
   name "Nodex"
@@ -27,7 +25,7 @@ cask "nodex" do
   end
 
   auto_updates true
-  depends_on macos: :monterey
+  depends_on macos: :sequoia
 
   app "Nodex.app"
   binary "#{appdir}/Nodex.app/Contents/Resources/bin/nodex", target: "nodex"
