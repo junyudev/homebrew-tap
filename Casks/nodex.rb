@@ -2,19 +2,10 @@
 # Do not edit release values manually.
 
 cask "nodex" do
-  version "0.3.0"
+  version "0.4.0"
+  sha256 "c2d2b2dbc3425c7d6ebe3d633c6067e0372079852467dd9e13bf27967a35a41a"
 
-  on_arm do
-    sha256 "764e50c70d713d271b171c5f403b35ad3d0b9940506f427c1eb2705586d00056"
-
-    url "https://github.com/junyudev/nodex/releases/download/v#{version}/Nodex-latest-arm64.dmg"
-  end
-  on_intel do
-    sha256 "42c6fa2e556ba005b2d2f8f736ac64ccbe21ad37680f79c50554d34f72ded02f"
-
-    url "https://github.com/junyudev/nodex/releases/download/v#{version}/Nodex-latest-x64.dmg"
-  end
-
+  url "https://github.com/junyudev/nodex/releases/download/v#{version}/Nodex-latest-arm64.dmg"
   name "Nodex"
   desc "Block-based Agent Orchestrator"
   homepage "https://nodex.jyu.app/"
@@ -25,6 +16,7 @@ cask "nodex" do
   end
 
   auto_updates true
+  depends_on arch: :arm64
   depends_on macos: :sequoia
 
   app "Nodex.app"
