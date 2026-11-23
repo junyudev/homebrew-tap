@@ -2,8 +2,8 @@
 # Do not edit release values manually.
 
 cask "nodex" do
-  version "0.5.10"
-  sha256 "731a35e51947bda193b6e8159508585c6ecab5299976ce63340b5a66ca4b3fb3"
+  version "0.5.11"
+  sha256 "ce32f8c0d63d5587c748a312cd5c026a372dea25cc6cd5b08cbdbc98520cd535"
 
   url "https://github.com/junyudev/nodex/releases/download/v#{version}/Nodex-latest-arm64.dmg"
   name "Nodex"
